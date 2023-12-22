@@ -1,0 +1,103 @@
+.nav__menu--mobile{
+  background-color: var(--color-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.6s;
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+/* MOBILE - BURGER */
+.mobile__burger{
+  cursor: pointer;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: auto;
+}
+.mobile__burger .line{
+  background-color: var(--color-white);
+  height: .3rem;
+  margin: .5rem;
+  width: 5rem;
+}
+
+.mobile__burger .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.mobile__burger .line2{
+  opacity: 0;
+}
+.mobile__burger .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* MOBILE - MENU */
+.mobile__menu{
+  width: 100%;
+  height: 100%;
+}
+.mobile__ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: inherit;
+  width: inherit;
+  /* height: 100%; */
+  /* height: auto; */
+  /* width: 100%; */
+  /* width: auto; */
+}
+.mobile__ul--li{
+  font-size: var(--size-lg);
+  text-transform: capitalize;
+  /* width: 60%; */
+}
+.mobile__ul--li a{
+  color: var(--color-white);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  width: 100%;
+}
+.mobile__ul--li a:hover{
+  background-color: var(--color-backmenu);
+  color: var(--color-font);
+  font-weight: bold;
+  border-radius: 3rem;
+}
+/* SUBMENU */
+.submenu__mobile--ul{
+  background-color: var(--color-backsubmenu);
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+/* MOBILE ICONS */
+.mobile__icons ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mobile__icons ul li a{
+  color: var(--color-white);
+  font-size: var(--size-lg);
+  transition: all 0.4s;
+}
+.mobile__icons ul li a:hover{
+  background-color: var(--color-backmenu);
+  color: var(--color-font);
+  border-radius: 25%;
+}

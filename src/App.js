@@ -1,5 +1,7 @@
 import './App.css';
+// MENU
 import MenuDeskTop from './Components/Menu/MenuDeskTop/MenuDeskTop';
+import MenuMobile from './Components/Menu/MenuMobile/MenuMobile';
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <header className='headerContent'>
         <div className='container'>
           <MenuDeskTop />
+          <MenuMobile />
         </div>
       </header>
 
