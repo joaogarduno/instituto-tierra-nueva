@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import MenuDeskTop from './Components/Menu/MenuDeskTop/MenuDeskTop';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+      {/* HEADER */}
+      <header className='headerContent'>
+        <div className='container'>
+          <MenuDeskTop />
+        </div>
       </header>
+
+      {/* BANNER - SECTION */}
+
+      {/* MAIN - CONTENT */}
+      <main className='mainContent'>
+        <section className='sectionContent'></section>
+        <section className='sectionContent'></section>
+        <section className='sectionContent'></section>
+        <section className='sectionContent'></section>
+        <section className='sectionContent'></section>
+        <section className='sectionContent'></section>
+      </main>
+
+      <footer className='footerContent'></footer>
     </div>
   );
 }

@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+/* COLORS */
+/*
+  Originales:
+  #0E2A44
+  #CFA33E
+  #FEFEFE
+*/
+
+/* VARIABLERS */
+:root{
+  /* FONTS */
+  --font-document: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --font-titles: 'Courier New', Courier, monospace;
+
+  /* SIZES */
+  --size-xxxs: 1.2rem;
+  --size-xxs: 1.4rem;
+  --size-xs: 1.5rem;
+    --size-smr: 1.6rem;
+    --size-sm: 1.8rem;
+    --size-md: 2rem;
+    --size-lg: 2.5rem;
+    --size-lgr: 3rem;
+    --size-xlg: 4rem;
+    --size-xxlg: 5rem;
+    --size-xxxlg: 6rem;
+
+  /* COLORS */
+  --color-background: #0E2A44;
+  --color-font: #CFA33E;
+  --color-white: #FEFEFE;
+  --color-black: #070606;
+  --color-backsubmenu: #A07C28;
+  --color-backmenu: #E5CD96;
+  /* --color-backsubmenu: #E9D6A8; */
+  /* --color-backsubmenu: #E0C585; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ALL - MAIN */
+*, *::after, *::before{
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, div {
+	display: block;
+}
+html, body{
+  /* max-height: 100%; */
+  height: 100%;
+}
+html{
+  background-color: var(--color-background);
+  color: var(--color-white);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-document);
+  font-size: var(--size-smr);
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ====================================================================== */
+h1, h2, h3, h4, h5, h6, p{
+  overflow-wrap: break-word;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-titles);
+  font-size: var(--size-lg);
+}
+a{
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ====================================================================== */
+header, nav, 
+main, section, article, aside, 
+figure, footer, div{
+  width: 100%;
+
 }
+
+/* ====================================================================== */
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+button{
+  border: none;
+  font-size: var(--size-xxxs);
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+/* ====================================================================== */
+/* .headerContent navContent .mainContent, sectionContent, articleContent, asideContent .footerContent */
+.mainContent{
+  display: grid;
+  gap: 4.5rem 0;
+}
+
+/* ====================================================================== */
+.container{
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 100%;
+}
+
+/* ====================================================================== */
+.row-container, .col-container{
+  max-width: 100%;
+}
+.row-container{
+  display: grid;
+}
+
+
+/* ====================================================================== */
+/* ==================================================== */
+/* =============================== */

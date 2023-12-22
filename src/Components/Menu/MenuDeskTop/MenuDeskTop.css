@@ -1,0 +1,46 @@
+.nav_menu--desktop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* BURGER */
+.desktop__burger{
+  display: block;
+  cursor: pointer;
+  width: auto;
+}
+.desktop__burger .line{
+  background-color: var(--color-font);
+  margin: .5rem;
+  height: .4rem;
+  width: 4rem;
+}
+
+/* LOGO */
+.desktop__logo{
+  width: 50%;
+}
+.desktop__logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MENU */
+.desktop__menu{
+  display: none;
+}
+
+/* ICONS - MENU */
+.desktop__icons{
+  font-size: var(--size-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+.desktop__icons a{
+  color: var(--color-font);
+}
